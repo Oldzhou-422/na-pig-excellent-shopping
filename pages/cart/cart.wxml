@@ -1,0 +1,73 @@
+<!-- 顶部获取用户收货地址 -->
+<view class="receive-address">
+	<view class="showBtn" wx:if="{{!address.userName}}">
+		<button bindtap="clickBtn" type="primary" plain>
+			获取收货地址
+		</button>
+	</view>
+	<view wx:elif="{{address.userName}}" class="showAddress">
+		<view class="show-name">
+			{{address.userName}}
+		</view>
+		<view class="show-address">
+			{{address.provinceName}} {{address.cityName}} {{address.countyName}} {{address.detailInfo}}
+		</view>
+	</view>
+</view>
+<!-- 商品详情 -->
+<view class="cart-info">
+	<view class="cart-title">
+		购物车
+	</view>
+	<view wx:if="{{cart.length}}" class="cart-goodsinfo">
+		<view class="cart-goods-item" wx:for="{{cart}}" wx:key="goods_id">
+			<view class="cart-checkbox">
+        <checkbox-group data-id="{{item.goods_id}}" bindchange="clickCheckbox">
+          	<checkbox class="cart-checked1"  value="" checked="{{item.checked}}" color=""></checkbox>
+        </checkbox-group>
+			</view>
+			<navigator class="cart-image">
+				<image class="cart-image1" src="{{item.goods_image}}" mode="widthFix"/>
+			</navigator>
+			<view class="cart-info-detail">
+				<view class="cart-info-title">
+					{{item.goods_name}}
+				</view>
+				<view class="cart-info-price-num">
+					<view class="cart-info-price">
+						￥{{item.goods_price}}
+					</view>
+					<view class="cart-info-goodsnum">
+						<view bindtap="goodsDecrement" data-index="{{index}}" class="cart-info-decrement">-</view>
+						<view class="cart-info-num">{{item.num}}</view>
+						<view bindtap="goodsIncrement" data-index="{{index}}" class="cart-info-increment">+</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+  <view wx:else class="cart-empty">
+    <image class="" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0173c45a17ec58a80120908d7c5b4b.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1627195801&t=bf8d3082b4e700ed8b9154af4375bda1" mode="widthFix" />
+  </view>
+    
+</view>
+<!-- 底部结算工具栏 -->
+<view class="payment-tool">
+  <!-- 全选按钮模块 -->
+	<view class="all-checkbox">
+		<checkbox-group bindchange="clickAllcheckBox">
+			<checkbox class="" value="" checked="{{allchecked}}" color="">
+			</checkbox>
+      <text class="" >全选</text>
+		</checkbox-group>
+	</view>
+  <!-- 合计费用模块 -->
+  <view class="payment-total">
+    <view>
+      合计:<text class="payment-price" >￥{{totalPrice}}</text>
+      <view class="include-transit">包含运费</view> 
+    </view>
+  </view>
+  <!-- 结算按钮 -->
+  <view bindtap="clickPay" class="order-pay">结算({{totalNum}})</view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "Tabs":"../../components/tabs/tabs",
+    "SearchInput":"../../components/search-input/search-input",
+    "BackTop":"../../components/Backtop/backtop"
+  },
+  "enablePullDownRefresh":true
+}

@@ -1,0 +1,24 @@
+<SearchInput></SearchInput>
+<Tabs tabs="{{tabs}}" bindclickTabs="clickTabs">
+  <navigator open-type="navigate" bindtap="clickGoodsitem" data-index="{{index}}" url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" class="goods-list" wx:for="{{goodsList}}" wx:key="goods_id" >
+    <view class="goods-list-img">
+      <image class="" src="{{item.goods_small_logo?item.goods_small_logo:''}}" lazy-load="false"/>
+    </view>
+    <view class="goods-list-info">
+      <view class="goods-list-title">
+        {{item.goods_name}}
+      </view>
+      <view class="goods-list-price">
+        ￥{{item.goods_price}}
+      </view>  
+    </view>
+  </navigator> 
+</Tabs>
+<navigator open-type="navigate" class="myFoots" url="../../pages/myFoots/myFoots" >
+  <view class="iconfont icon-zuji"></view>
+</navigator>
+  
+<view class="backtop" bindtap="clickBacktop"  target="" url="">
+  <view class="iconfont icon-up"></view>
+</view>
+

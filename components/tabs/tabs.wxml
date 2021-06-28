@@ -1,0 +1,9 @@
+<!--components/tabs/tabs.wxml-->
+<view class="tabstop">
+	<view class="tabstop-item {{item.isActive?'active':''}}" bindtap="clickTabs" data-index="{{index}}" wx:for="{{tabs}}" wx:key="id">
+		  {{item.title}}
+	</view>
+</view>
+<view>
+     <slot></slot>
+</view>

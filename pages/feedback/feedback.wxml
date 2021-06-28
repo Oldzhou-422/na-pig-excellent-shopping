@@ -1,0 +1,37 @@
+<Tabs tabs="{{tabs}}" bindclickTabs="clickTabs">
+  <view class="feedback-content-wrap">
+    <view class="feedback-title">
+      问题的种类
+    </view>
+    <view class="feedback-title-tag">
+      <view class="feedback-tag-item">
+        功能建议
+      </view>
+      <view class="feedback-tag-item">
+        购买遇到问题
+      </view>
+      <view class="feedback-tag-item">
+        性能问题
+      </view>
+      <view class="feedback-tag-item">
+        其他
+      </view>
+        
+    </view>
+    <textarea value="{{textValue}}" bindinput="ListenInput" class="feedback-content" placeholder="请描述一下您的问题">
+      <button size="mini" class="add-image" bindtap="clickAddImage">+</button>  
+      <view class="image-list">
+        <view class="image-item" wx:for="{{ImagesList}}" wx:key="*this">
+          <icon class="image-item-icon" color="red" type="clear" bindtap="RemoveImage" data-index="{{index}}"></icon>
+          <image class="" src="{{item}}"/>
+        </view>
+       
+      </view>
+    </textarea>
+    <button size="mini" class="submit" bindtap="clickSubmit">
+      <icon class="submit-icon" type="success_no_circle" size="23" color="white"></icon>
+      <text>提交</text>
+    </button>
+      
+  </view>
+</Tabs>

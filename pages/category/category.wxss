@@ -1,0 +1,54 @@
+
+/* page{
+  height: 100%;
+} */ 
+.category{
+  height:100%
+}
+.category-wrapper{
+  display: flex;
+  height: calc(100vh - 90rpx);
+}
+.category-left{
+  flex: 2; 
+}
+.category-right{
+  flex: 5;
+}
+/* 左边分类栏的样式设置 */
+.leftMenuList-item{
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+.category-right-list{
+  width: 100%;
+}
+.category-right-title{
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+}
+.category-right-item1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-right-item{
+  width: 33.3%;
+  height: 120rpx;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+.category-right-item-title{
+  text-align: center;
+  font-size: 30rpx;
+}
+.category-right-item image{
+  width: 80rpx;
+  margin-left: 50rpx;
+  
+}
+.active{
+  color: var(--themeColor);
+}

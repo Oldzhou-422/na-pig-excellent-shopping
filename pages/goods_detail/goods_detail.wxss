@@ -1,0 +1,122 @@
+/* pages/goods_detail/goods_detail.wxss */
+.detail-swiper-item{
+  height: 65vw;
+  text-align: center;
+  background-color: #eee;
+}
+.detail-swiper{
+  height: 450rpx;
+}
+.detail-swiper-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-swiper-img{
+  width: 60%;
+}
+.detail-info-price{
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  color: var(--themeColor);
+  margin-left: 5rpx;
+}
+.detail-info{
+  margin-left: 8rpx;
+  margin-top: 10rpx;
+  display: flex;
+}
+.detail-info-name{
+  flex: 5;
+  font-size: 31rpx;
+  padding: 8rpx 10rpx;
+  overflow : hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  
+  
+}
+.detail-info-collect{
+  height: 550%;
+  padding-bottom: 10rpx;
+  flex:1;
+  display: flex;
+  flex-direction: column;  
+  justify-content:center;
+  align-items: center;
+  border-left: 1rpx solid grey;
+}
+/* 设置收藏选中图标的颜色 */
+.icon-collect1{
+  color: orangered;
+}
+
+/* 图文详情 */
+.detail-pic-text{
+  margin-top: 30rpx;
+}
+.pic-text-title{
+  width: 100%;
+  height: 15vw;
+  background-color: #eee;
+  margin-left: 15rpx;
+  padding-left: 10rpx;
+  display: flex;
+  align-items: center;
+  color: var(--themeColor);
+  border-radius: 10px;
+}
+.richText{
+  margin-top: 20rpx;
+}
+.bottom-tool{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  border-top: 1rpx solid #A9A9A9;
+}
+.tool-item{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  position: relative;
+}
+.tool-item button{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  opacity: 0;
+}
+
+.addtocart{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.payment{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+}

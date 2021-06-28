@@ -1,0 +1,130 @@
+.receive-address{
+  padding: 30rpx;
+}
+.receive-address button{
+  width: 60%;
+}
+.cart-empty image{
+  width: 100%;
+  height: 50vw;
+}
+.cart-info{
+  padding-bottom: 100rpx;
+}
+.cart-title{
+  padding: 20rpx;
+  font-size: 40rpx;
+  color: var(--themeColor);
+  border: 1rpx solid grey;
+}
+.cart-goodsinfo{
+  width: 100%;
+}
+.cart-goods-item{
+  display: flex;
+
+}
+.cart-checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 25vw;
+}
+
+.cart-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  
+}
+.cart-info-detail{
+  width: 55%;
+  height:30vw;
+  padding-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.cart-info-title{
+  overflow : hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.cart-info-price-num{
+  display: flex;
+  justify-content: space-between;
+}
+.cart-info-price{
+  color: var(--themeColor);
+
+}
+.cart-info-goodsnum{
+  display: flex;
+  width: 150rpx;
+  padding-right: 5rpx;
+}
+.cart-info-decrement{
+  flex: 1;
+  border: 1rpx grey solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-info-num{
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-info-increment{
+  flex: 1;
+  border: 1rpx grey solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-tool{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  border-top: 2rpx grey solid;
+  background-color: #fff;
+}
+.all-checkbox{
+  flex:2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-total{
+  flex: 4;
+  text-align: right;
+  padding-top:15rpx;
+  padding-right: 15rpx;
+  font-size: 30rpx;
+}
+.payment-price{
+  color: var(--themeColor);
+  font-size: 36rpx;
+}
+.include-transit{
+  font-size: 28rpx;
+}
+.order-pay{
+  flex: 3;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--themeColor);
+  color: #fff;
+  font-weight: 600;
+}

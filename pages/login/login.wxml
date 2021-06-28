@@ -1,0 +1,4 @@
+<button class="" size="default" type="primary" plain  bindtap="getUserInfo">
+  登录
+</button>
+  

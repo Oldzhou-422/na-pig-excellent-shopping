@@ -1,0 +1,18 @@
+/* components/search-input/search-input.wxss */
+.search-input{
+  display: flex;
+  /* 这两句设置的是白色内框的垂直居中设置 */
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  width: 100%;
+  background-color: var(--themeColor);
+}
+.search-input-naviga{
+  height: 85%;
+  width: 90%;
+  text-align: center;
+  line-height: 76rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}

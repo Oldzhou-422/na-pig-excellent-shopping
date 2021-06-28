@@ -1,0 +1,28 @@
+<Tabs tabs="{{tabs}}" bindclickTabs="clickTabs">
+  <!-- 页面标题部分 -->
+  <view class="collect-title">
+    <view class="collect-title-item {{item.isActive? 'active1':''}}"
+     wx:for="{{titles}}"
+     wx:key="id"
+     bindtap="clickTitles"
+     data-index="{{index}}">
+    {{item.title}}
+    </view> 
+  </view>
+  <!-- 页面商品列表 -->
+  <view class="collect-goods-list">
+    <navigator wx:for="{{collect}}" wx:key="goods_id" class="collect-goods-item" url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" open-type="navigate">
+      <view class="collect-goods-image">
+        <image class="" src="{{item.goods_image}}" mode="widthFix" />
+      </view>
+      <view class="collect-goods-info">
+        <view class="collect-goods-name">
+          {{item.goods_name}}
+        </view>
+        <view class="collect-goods-price">
+          ￥{{item.goods_price}}
+        </view>
+      </view>
+    </navigator>
+  </view>
+</Tabs>

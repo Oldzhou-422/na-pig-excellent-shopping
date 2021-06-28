@@ -1,0 +1,14 @@
+<navigator  url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" class="goods-list" wx:for="{{goodsListitem}}" wx:key="goods_id" >
+    <view class="goods-list-img">
+      <image class="" src="{{item.goods_small_logo?item.goods_small_logo:''}}" lazy-load="false"/>
+    </view>
+    <view class="goods-list-info">
+      <view class="goods-list-title">
+        {{item.goods_name}}
+      </view>
+      <view class="goods-list-price">
+        ￥{{item.goods_price}}
+      </view>  
+    </view>
+</navigator> 
+  

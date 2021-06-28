@@ -1,0 +1,45 @@
+/* pages/index/index.wxss */
+.swiper{
+  width: 750rpx;
+  height: 340rpx;
+}
+.swiper-image{
+  width: 100%;
+}
+/* 设置首页分类导航的 */
+.navigator{
+  display: flex;
+  padding: 0 10px;
+}
+.navigator-List{
+  flex: 1;
+}
+.navigator-List image{
+  width: 100%;
+  height: 70px;
+}
+
+/* 设置楼层的央视 */
+.floor-item{
+  margin-top: 20rpx;
+} 
+.floor-item .floor-item-product{
+  overflow: hidden;
+  float: left;
+  width: 33.3%;
+  
+}
+.floor-item-product:nth-of-type(1){
+  height: calc(33.33vw*386/232);
+}
+.floor-item-product:nth-last-child(-n+4){
+  height: calc(33.3vw*386/232/2);
+  border-left: 5px solid #fff;
+}
+/* .floor-item-product:nth-child(2){
+  border-bottom: 5px solid #fff;
+} */
+.floor-item-product image{
+  width: 100%;
+  height: 100%;
+}

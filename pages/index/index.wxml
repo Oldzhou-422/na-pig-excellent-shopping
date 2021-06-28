@@ -1,0 +1,33 @@
+<search-input></search-input>
+<view>
+  <swiper class="swiper" indicator-dots="true" indicator-color="rgba(0,0,0,.3)" autoplay="false" 
+  current="0" current-item-id="" interval="3000" >
+  <swiper-item class="" wx:for="{{swiperList}}" wx:key="goods_id">
+    <image class="swiper-image" src="{{item.image_src}}" mode="widthFix"/>
+  </swiper-item>
+</swiper>
+</view>
+<view class="navigator">
+  <navigator class="navigator-List" wx:for="{{navigatorList}}" wx:key="index">
+    <image class="" src="{{item.image_src}}" mode="widthFix" lazy-load="false"/>
+  </navigator>  
+</view>
+<view class="floor-List">
+    <view class="floor-item" wx:for="{{floorList}}" wx:for-item="item1" wx:key="name">
+      <!-- 一级标题图片数据 -->
+      <navigator class=""  url="" hover-class="navigator-hover" open-type="navigate">
+        <image class="" src="{{item1.floor_title.image_src}}" mode="widthFix" lazy-load="false"/>
+      </navigator>
+      <!--二级楼层图片获取 -->
+      <navigator class="floor-item-product" wx:for="{{item1.product_list}}" wx:for-item="item2" wx:for-index="index2" wx:key="name">     
+        <image src="{{item2.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}" /> 
+      </navigator>
+    </view>
+      
+</view>
+  
+  
+  
+
+  
+  

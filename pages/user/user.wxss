@@ -1,0 +1,149 @@
+.user-info-wrap{
+  background-color: #DC4C40;
+  height: 40vh;
+  position: relative;
+}
+.user-info-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.user-img-wrap{
+  filter: blur(3px);
+  width: 100%;
+  height: 100%;
+}
+.user-img-bg{
+  width: 100%;
+  height: 100%;
+}
+
+.user-img-detail{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.user-img-icon1{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.user-img-name{
+  margin-top: 30rpx;
+  text-align: center;
+}
+.user-login{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 36rpx;
+  color: #fff;
+  font-weight: 600;
+  padding: 20rpx 50rpx;
+  border-radius: 20rpx;
+  background-color:green
+}
+/* 用户界面功能界面 */
+
+.user-function-wrap{
+  height: 100vh;
+  background-color: #eee;
+  position: relative;
+}
+.user-history{
+  width: 95%;
+  background-color: #fff;
+  position: absolute;
+  top: -50rpx;
+  left: 20rpx;
+  display: flex;
+}
+.user-history-item{
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+  padding: 15rpx;
+}
+.user-history-item-num{
+  color: var(--themeColor);
+}
+.user-history-item-text{
+  color: #666;
+}
+.user-order{
+  width: 95%;
+  background-color: #fff;
+  position: absolute;
+  top: 90rpx;
+  left: 20rpx;
+  
+}
+.user-order-title{
+  padding:20rpx;
+  font-size: 34rpx;
+  border-bottom: #eee 3rpx solid;
+  color: #666;
+}
+.user-order-wrap{
+  display: flex;
+}
+.user-order-item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  display: flex;
+  flex-direction:column;
+}
+.iconfont{
+  color: var(--themeColor);
+  margin-bottom: 10rpx;
+  font-size: 40rpx;
+}
+.user-order-item-text{
+  font-size: 32rpx;
+  color: #666;
+}
+
+/* 收货地址管理 */
+.user-address{
+  background-color: #fff;
+  position: absolute;
+  top: 340rpx;
+  width: 89%;
+  left: 20rpx;
+  padding: 25rpx;
+  color: #666;
+  font-size: 34rpx;
+}
+.developer-info{
+  position: absolute;
+  top: 460rpx;
+  left: 20rpx;
+  width: 95%;
+  background-color: #fff;
+}
+.developer-info-item{
+  height: 50rpx;
+  padding: 20rpx;
+  font-size: 34rpx;
+  color: #666;
+  border-bottom: 1rpx #eee solid;
+}
+.developer-info-item:nth-of-type(1){
+  display: flex;
+  justify-content: space-between;
+}
+.share-app{
+  position:absolute;
+  top: 750rpx;
+  background-color: #fff;
+  left: 20rpx;
+  width: 95%;
+  padding: 20rpx;
+  font-size: 34rpx;
+  color: #666;
+}

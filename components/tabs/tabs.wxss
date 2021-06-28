@@ -1,0 +1,22 @@
+.tabstop{
+  display: flex;
+  position: sticky;
+  top: -1px;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .9);
+
+}
+.tabstop-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  padding: 15rpx 0;
+  font-size: 34rpx;
+ 
+}
+
+.active{
+  color: var(--themeColor);
+  border-bottom: 3px solid var(--themeColor);
+}

@@ -1,0 +1,5 @@
+<Tabs tabs="{{tabs}}" bindclickTabs="clickTabs">
+  
+</Tabs>
+
+

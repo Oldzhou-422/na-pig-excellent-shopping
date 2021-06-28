@@ -1,0 +1,7 @@
+@import "./style/iconfont.wxss";
+page{
+  --themeColor:#eb4405;
+}
+navigator{
+  box-sizing: border-box;
+}

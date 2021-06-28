@@ -1,0 +1,84 @@
+page{
+  background-color: #eee;
+}
+.feedback-content-wrap{
+  padding: 20rpx 15rpx;
+  position: relative;
+}
+.feedback-title{
+  color: #666;
+}
+.feedback-title-tag{
+  margin-top: 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback-tag-item{
+  padding: 15rpx;
+  background-color: #fff;
+  font-size: 32rpx;
+  width: 200rpx;
+  text-align: center;
+  margin-left: 14rpx;
+  margin-top: 20rpx;
+}
+.feedback-content{
+  width: 97%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 40rpx;
+  padding: 15rpx 10rpx;
+  font-size: 32rpx;
+  color: #666;
+  font-weight: 600;
+  position: relative;
+}
+.add-image{
+  position: absolute;
+  bottom: 30rpx;
+  left: 25rpx;
+  font-size: 60rpx;
+  color: #ccc;
+  border: 1rpx solid #ccc;
+  font-weight: 600;
+  z-index: 10;
+}
+.submit{
+  margin-top: 15rpx;
+  background-color: red;
+  position: absolute;
+  right: 20rpx;
+  color: #fff;
+  font-weight: 600;
+
+}
+.submit-icon{
+ position: relative;
+ top: 15rpx;
+ left: -5rpx;
+}
+
+/* 载入图片样式 */
+.image-list{
+  display: flex;
+  position: absolute;
+  bottom: 26rpx;
+  left: 120rpx;
+}
+.image-item{
+  position:relative;
+  margin-left: 20rpx;
+}
+.image-item-icon{
+  position: absolute;
+  top: -25rpx;
+  left: 50rpx;
+  z-index: 9;
+  
+}
+.image-item image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 15rpx;
+}
